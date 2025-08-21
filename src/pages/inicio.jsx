@@ -10,9 +10,6 @@ export default function Inicio (){
         let n1 = document.getElementById('numero1').value
         let n2 = document.getElementById('numero2').value
 
-        alert(n1)
-        alert(n2)
-
         let url = `http://localhost:5010/calculadora/somar/${n1}/${n2}`
 
        let response = await fetch(url)
@@ -43,20 +40,20 @@ return(
                 <Link to = {"/"} >
                 <img src="/src/assets/images/seta.webp" height={40} />
                 </Link>
-                <h1 className="titulo"> Exercicio 01 - Cupom de desconto</h1>
+                <h1 className="titulo"> Teste React 1 - Somar dois números</h1>
             </div>
             
             <div className="linha-amarela"></div>
             
             <div className="enunciado">
-                 <p className="card">Implementar um programa em Java Script para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto.</p>
+                 <p className="card">Implementar um programa em Java Script para calcular a soma de dois números.</p>
             </div>
     <div className="contas">  
          <div className="card2">
-             <h3 className="text">Informe o valor do pedido </h3>
+             <h3 className="text">Informe o valor do primeiro número </h3>
              <input type='text'  id='numero1'  />
              <br />
-             <h3 className="text">Informe o valor do cupom </h3>
+             <h3 className="text">Informe o valor do segundo número </h3>
               <input type='text' id='numero2' />
              <br />
              <div className="local">
